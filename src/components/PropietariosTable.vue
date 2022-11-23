@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <router-link to="/addUsuario">Agregar Usuario</router-link>
+  </div>
   <table class="table">
     <thead>
     <tr>

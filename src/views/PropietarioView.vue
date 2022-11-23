@@ -12,7 +12,7 @@ export default {
   name: 'propietarioView',
   data() {
     return {
-      titulo: "Propietarios"
+      titulo: "Usuarios"
     }
   },
   methods: {},

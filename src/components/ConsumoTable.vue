@@ -10,13 +10,13 @@
     </tr>
     </thead>
     <tbody>
-    <tr v-for="(reunion, index) in reuniones">
+    <tr v-for="(consumo, index) in consumos">
       <th scope="row">{{index+1}}</th>
-      <td>{{reunion.fecha_reunion}}</td>
-      <td>{{reunion.motivo}}</td>
-      <td>{{reunion.estado}}</td>
-      <td>{{reunion.user_id}}</td>
-      <td><app-acciones @onAccion="irA($event, reunion.id)"></app-acciones></td>
+      <td>{{consumo.fecha_lectura}}</td>
+      <td>{{consumo.id_usuario}}</td>
+      <td>{{consumo.cantidad_consumo}}</td>
+      <td>{{consumo.total}}</td>
+      <td><app-acciones @onAccion="irA($event, consumo.id)"></app-acciones></td>
     </tr>
     </tbody>
   </table>
@@ -32,6 +32,7 @@ export default {
     return {
 
       consumos: null,
+      propietrios:null,
       loading: true,
       errored: false
     }
@@ -68,6 +69,17 @@ export default {
           })
           .catch(e => console.log(e));
     },
+    getConsumoId(idConsum) {
+            axios({
+                method: "get",
+                url: "http://localhost:4444/propietarios/"+idConsum
+            })
+                .then(response => {
+                    this.propietarios = response.data;
+                    console.log("esto es el propietario"+propietarios.nombre);
+                })
+                .catch(e => console.log(e));
+        },
   },
   computed: {},
   mounted() {

@@ -13,11 +13,14 @@
         <li class="nav-item">
             <router-link to="/propietarios">Usuarios</router-link>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <router-link to="/reuniones">Reuniones</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/asistencias">Asistencias</router-link>
+        </li> -->
+        <li class="nav-item">
+          <router-link to="/consumos">Consumos</router-link>
         </li>
         
       </ul>

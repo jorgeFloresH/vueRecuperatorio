@@ -23,7 +23,7 @@
       "avatar": "",
       "nombres": "Roger",
       "paterno": "Dalenz",
-      "materno": "merida",
+      "materno": "Mamani",
       "nro_documento": 123456,
       "expedido": "LP",
       "genero": "MASCULINO",
@@ -67,6 +67,21 @@
       "estado": "a",
       "created": "2022-10-24T01:23:39.865769+00:00",
       "updated": "2022-10-24T01:23:39.865814+00:00"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "avatar": null,
+      "nombres": "adas",
+      "paterno": "adasd",
+      "materno": "adasdas",
+      "nro_documento": null,
+      "expedido": null,
+      "genero": null,
+      "telefono": null,
+      "celular": "234234",
+      "domicilio": "sdfsfsd",
+      "estado": "a"
     }
   ],
   "consumos": [
