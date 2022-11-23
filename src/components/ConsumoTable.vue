@@ -1,4 +1,7 @@
 <template>
+  <div>
+    <router-link to="/addConsumo">Agregar Consumo</router-link>
+  </div>
   <table class="table">
     <thead>
     <tr>

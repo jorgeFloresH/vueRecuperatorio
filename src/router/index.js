@@ -74,6 +74,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "tareas" */ '../views/AddPropietarioView.vue')
   },
   {
+    path: '/addConsumo',
+    name: 'addConsumo',
+    component: () => import(/* webpackChunkName: "tareas" */ '../views/AddConsumoView.vue')
+  },
+  {
     path: '/tareas',
     name: 'tareas',
     component: () => import(/* webpackChunkName: "tareas" */ '../views/TareaView.vue')
